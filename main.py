@@ -52,7 +52,7 @@ def generate_verification_link(email):
     encoded_email = urllib.parse.quote(email)
     encoded_expiration = urllib.parse.quote(expiration_time.isoformat())
 
-    link = f"http://bharathbhaskar.me:8080/verify?token={verification_token}&email={encoded_email}&expires={encoded_expiration}"
+    link = f"https://bharathbhaskar.me:443/verify?token={verification_token}&email={encoded_email}&expires={encoded_expiration}"
     
     return link
 
